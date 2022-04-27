@@ -1,0 +1,21 @@
+// Сторонние библиотеки
+@import 'vendor/reset';
+@import 'vendor/fontawesome/fontawesome';
+@import 'vendor/fontawesome/solid';
+@import 'vendor/fontawesome/brands';
+
+// Общие стили
+@import 'vars';
+@import 'general';
+
+// Повторяющиеся блоки
+@import 'repeat/btn';
+
+// Основные части шаблона
+@import 'blocks/header';
+@import 'blocks/sidebar';
+@import 'blocks/main';
+
+// Остальные блоки
+@import 'blocks/buttons-sidebar';
+@import 'blocks/social-buttons';

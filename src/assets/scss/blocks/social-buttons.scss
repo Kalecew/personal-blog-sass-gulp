@@ -1,0 +1,27 @@
+.social-buttons {
+	&__list {
+	}
+	&__item {
+	}
+	&__link {
+		font-size: 0;
+		text-decoration: none;
+	}
+	&__icon {
+		width: 2.2rem;
+		height: 2.2rem;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&--instagram {
+			font-size: 2rem;
+		}
+		&--vk {
+			font-size: 2.6rem;
+		}
+		&--pinterest {
+			font-size: 1.5rem;
+		}
+	}
+}
