@@ -7,4 +7,24 @@
 	height: $height-header;
 	background-color: $bg-darkest;
 	box-shadow: 0 .5rem 2.2rem rgba(0,0,0,.25);
+	display: flex;
+	justify-content: space-between;
+	&__left {
+	}
+	&__right {
+		display: flex;
+	}
+	&__nav {
+	}	
+	&__user-buttons {
+	}
+	&__search-form {
+	}
+	&__search-input {
+		height: 100%;
+		width: 21.2rem;
+		font-size: 1.2rem;
+		background-color: $bg-dark-gray;
+		padding: 0 2rem !important;
+	}
 }

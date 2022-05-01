@@ -1,12 +1,14 @@
 // Сторонние библиотеки
 @import 'vendor/reset';
-@import 'vendor/fontawesome/fontawesome';
-@import 'vendor/fontawesome/solid';
-@import 'vendor/fontawesome/brands';
 
 // Общие стили
 @import 'vars';
 @import 'general';
+
+// fontawesome
+@import 'vendor/fontawesome/fontawesome';
+@import 'vendor/fontawesome/solid';
+@import 'vendor/fontawesome/brands';
 
 // Повторяющиеся блоки
 @import 'repeat/btn';
@@ -19,3 +21,8 @@
 // Остальные блоки
 @import 'blocks/buttons-sidebar';
 @import 'blocks/social-buttons';
+@import 'blocks/nav';
+@import 'blocks/user-buttons';
+@import 'blocks/children-nav';
+@import 'blocks/stories';
+@import 'blocks/story';

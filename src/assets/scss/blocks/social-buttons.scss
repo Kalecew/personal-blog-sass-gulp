@@ -1,5 +1,7 @@
 .social-buttons {
 	&__list {
+		display: flex;
+		gap: 1.5rem;
 	}
 	&__item {
 	}
@@ -8,20 +10,30 @@
 		text-decoration: none;
 	}
 	&__icon {
-		width: 2.2rem;
-		height: 2.2rem;
+		width: 2.5rem;
+		height: 2.5rem;
 		background-color: #fff;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		overflow: hidden;
 		&--instagram {
-			font-size: 2rem;
+			font-size: 2.1rem;
+			border-radius: .6rem;
+			color: $text-light;
+			background: linear-gradient(45deg, $instagram1, $instagram2, $instagram3);
 		}
 		&--vk {
 			font-size: 2.6rem;
+			border-radius: 1.3rem;
+			background: url('../images/img/vk.svg') center no-repeat;
 		}
 		&--pinterest {
-			font-size: 1.5rem;
+			font-size: 1.6rem;
+			border-radius: 1.3rem;
+			padding-top: 0.1em;
+			color: $text-light;
+			background-color: $pinterest;
 		}
 	}
 }

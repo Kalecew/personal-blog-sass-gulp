@@ -1,0 +1,16 @@
+.user-buttons {
+	&__list {
+		display: flex;
+	}
+	&__item {
+		transition: background-color .2s linear;
+		&:hover {
+			background-color: $bg-child-nav;
+		}
+	}
+	&__link {
+		text-transform: uppercase;
+		padding: 1.4rem;
+		font-size: 1.1rem;
+	}
+}

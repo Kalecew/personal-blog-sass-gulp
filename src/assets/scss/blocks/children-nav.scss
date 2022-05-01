@@ -1,0 +1,21 @@
+.children-nav {
+	width: 16.5rem;
+	padding: .8rem 0;
+	background-color: $bg-child-nav;
+	border-radius: 0 0 .5rem .5rem;
+	box-shadow: 0 .6rem .8rem rgba(0,0,0,.20);
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+	}
+	&__link {
+		padding: .5rem 1.3rem;
+		font-size: 1.2rem;
+		transition: background-color .2s ease-in-out;
+		&:hover {
+			background-color: darken($bg-child-nav, 5%);
+		}
+	}
+}

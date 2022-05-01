@@ -1,25 +1,34 @@
 .btn {
-	border: none;
 	font-size: 1.2rem;
+	line-height: 1.1;
+	text-align: center;
 	&--circle {
-		border-radius: 2.5rem;
-		padding: 1.3rem 0;
-		width: 12rem;
+		border-radius: 2.08em;
+		padding: 1.1em 0;
+		width: 10em;
 		font-weight: 500;
 	}
 	&--square {
 		border-radius: .5rem;
-		padding: .8rem 1.5rem;
+		padding: .7em 1.25em;
 	}
 	&--red {
 		background: $btn-bg-red;
 		border: 1px solid transparent;
-		color: $text-light;		
+		color: $text-light;	
+		box-shadow: 0 .7rem 1.7rem -1rem rgba($btn-bg-red, .2);	
+		&:hover {
+			background: darken($btn-bg-red, 5%);
+		}
 	}
 	&--blue {
 		background: $btn-bg-blue;
 		border: 1px solid transparent;
 		color: $text-light;
+		box-shadow: 0 .7rem 1.7rem -1rem rgba($btn-bg-blue, .2);
+		&:hover {
+			background: darken($btn-bg-blue, 5%);
+		}	
 	}
 	&--transp-blue {
 		background: transparent;
