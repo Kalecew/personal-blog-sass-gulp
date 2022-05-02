@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
@@ -92,6 +93,7 @@ video {
   *display: inline;
   *zoom: 1;
   max-width: 100%;
+  height: 0;
 }
 
 /**
@@ -217,6 +219,7 @@ textarea {
   *vertical-align: middle;
   /* 3 */
   font: inherit;
+  border: none;
 }
 
 button {
@@ -391,6 +394,55 @@ body {
   max-width: 70rem;
   margin: 0 auto;
   padding: 6rem 5rem 8rem;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
+/* W3C standard
+   сейчас только для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #107EFF #0D0D0D;
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #107EFF;
+  border-radius: 5px;
+  border: 3px solid #0D0D0D;
 }
 
 /*!
@@ -10510,37 +10562,61 @@ readers do not read off random characters that represent icons */
 }
 
 .btn {
-  font-size: 1.2rem;
-  line-height: 1.1;
-  text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 .btn--circle {
   border-radius: 2.08em;
   padding: 1.1em 0;
   width: 10em;
   font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  text-align: center;
+}
+.btn--round {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 2.2rem;
+  font-size: 0;
 }
 .btn--square {
   border-radius: 0.5rem;
   padding: 0.7em 1.25em;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  text-align: center;
 }
 .btn--red {
-  background: #ED3024;
+  background-color: #ED3024;
   border: 1px solid transparent;
   color: #fff;
   box-shadow: 0 0.7rem 1.7rem -1rem rgba(237, 48, 36, 0.2);
 }
 .btn--red:hover {
-  background: #e51f13;
+  background-color: #e51f13;
 }
 .btn--blue {
-  background: #3137C9;
+  background-color: #3137C9;
   border: 1px solid transparent;
   color: #fff;
   box-shadow: 0 0.7rem 1.7rem -1rem rgba(49, 55, 201, 0.2);
 }
 .btn--blue:hover {
-  background: #2c31b4;
+  background-color: #2c31b4;
+}
+.btn--light {
+  background-color: #EBEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--light:hover {
+  background-color: #dedede;
+}
+.btn--light::before {
+  color: #989898;
+  font-size: 2.2rem;
+  line-height: 1.1;
 }
 .btn--transp-blue {
   background: transparent;
@@ -10549,6 +10625,11 @@ readers do not read off random characters that represent icons */
 .btn--transp-light {
   background: transparent;
   color: #fff;
+}
+.btn--send {
+  background-image: url("../images/img/send.svg");
+  background-position: 55% 50%;
+  background-repeat: no-repeat;
 }
 
 .header {
@@ -10815,4 +10896,45 @@ readers do not read off random characters that represent icons */
   bottom: 1.2rem;
   right: 1.2rem;
   z-index: 2;
+}
+
+.wall {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.new-post {
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.45);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #121212;
+}
+.new-post__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-post__input {
+  background-color: inherit;
+  font-size: 1.5rem;
+  padding: 1.87em;
+  line-height: 1.2;
+  min-width: 70%;
+  max-width: 100%;
+  max-height: 50rem;
+  color: #fff;
+  resize: none;
+}
+.new-post__input::placeholder {
+  color: #D2D2D2;
+}
+.new-post__buttons {
+  display: flex;
+  gap: 2rem;
+  align-self: flex-end;
+  margin: 1.5rem 2rem 1.5rem auto;
+}
+.new-post__photo-btn {
+  cursor: pointer;
 }

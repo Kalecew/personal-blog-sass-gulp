@@ -94,6 +94,7 @@ video {
     *display: inline;
     *zoom: 1;
     max-width: 100%;
+    height: 0;
 }
 
 /**
@@ -217,6 +218,7 @@ textarea {
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
     font: inherit;
+    border: none;
 }
 
 button {

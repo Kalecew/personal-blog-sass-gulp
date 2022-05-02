@@ -1,34 +1,61 @@
 .btn {
-	font-size: 1.2rem;
-	line-height: 1.1;
-	text-align: center;
+	transition: all .2s ease-in-out;
+	// форма
 	&--circle {
 		border-radius: 2.08em;
 		padding: 1.1em 0;
 		width: 10em;
 		font-weight: 500;
+		font-size: 1.2rem;
+		line-height: 1.1;
+		text-align: center;
+	}
+	&--round {
+		width: 4.4rem;
+		height: 4.4rem;
+		border-radius: 2.2rem;
+		font-size: 0;
 	}
 	&--square {
 		border-radius: .5rem;
 		padding: .7em 1.25em;
+		font-size: 1.2rem;
+		line-height: 1.1;
+		text-align: center;
 	}
+
+	// цвет
 	&--red {
-		background: $btn-bg-red;
+		background-color: $btn-bg-red;
 		border: 1px solid transparent;
 		color: $text-light;	
 		box-shadow: 0 .7rem 1.7rem -1rem rgba($btn-bg-red, .2);	
 		&:hover {
-			background: darken($btn-bg-red, 5%);
+			background-color: darken($btn-bg-red, 5%);
 		}
 	}
 	&--blue {
-		background: $btn-bg-blue;
+		background-color: $btn-bg-blue;
 		border: 1px solid transparent;
 		color: $text-light;
 		box-shadow: 0 .7rem 1.7rem -1rem rgba($btn-bg-blue, .2);
 		&:hover {
-			background: darken($btn-bg-blue, 5%);
+			background-color: darken($btn-bg-blue, 5%);
 		}	
+	}
+	&--light {
+		background-color: $btn-bg-light;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			background-color: darken($btn-bg-light, 5%);
+		}	
+		&::before {
+			color: $btn-icon-gray;
+			font-size: 2.2rem;	
+			line-height: 1.1;
+		}
 	}
 	&--transp-blue {
 		background: transparent;
@@ -37,5 +64,12 @@
 	&--transp-light {
 		background: transparent;
 		color: $text-light;
+	}
+
+	//иконки
+	&--send {
+		background-image: url('../images/img/send.svg');
+		background-position: 55% 50%;
+		background-repeat: no-repeat;
 	}
 }
