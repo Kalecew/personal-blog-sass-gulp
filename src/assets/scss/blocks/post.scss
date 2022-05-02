@@ -1,20 +1,80 @@
 .post {
-	&__img-wrap {
+	background-color: $bg-dark-gray;
+	border-radius: .5rem;
+	box-shadow: 0 1.5rem 2.5rem rgba(0,0,0, .45);
+	overflow: hidden;
+	&__header {
+		aspect-ratio: 20 / 9;
+	}
+	&__content {
+		margin: 2.5rem 2.5rem 2rem 2.5rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	&__footer {
+		margin-top: 2rem;
+		margin: 0 2.5rem 2.5rem 2.5rem;
+		display: flex;
+		align-items: center;
+		gap: 3rem;
 	}
 	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 	&__video-wrap {
+		margin-bottom: 1rem;
+		aspect-ratio: 20 / 9;
 	}
 	&__video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
-	&__header {
+	&__title {
+		font-weight: 500;
+		font-size: 1.8rem;
 	}
 	&__text {
+		font-size: 1.4rem;
+		line-height: 1.5em;
+		color: $text-light-gray;
+	}	
+	&__link-wrap {
+		width: 100%;
+		height: 100%;
+		&:hover {
+			text-decoration: underline;
+		}		
 	}
 	&__date {
+		color: $text-gray;
+		font-size: 1.2rem;
 	}
 	&__tag {
+		font-size: 1.2rem;
+		color: $text-gray;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: -1.5rem;
+			transform: translateY(-50%);
+			width: 0.6rem;
+			height: 0.6rem;
+			border-radius: 50%;
+			background-color: $bg-light;
+		}
 	}
 	&__link {
+		margin-left: auto;
+		font-size: 1.4rem;
+		color: $text-blue;
+		&:hover {
+			color: darken($text-blue,5%);
+		}
 	}
 }

@@ -93,7 +93,7 @@ video {
   *display: inline;
   *zoom: 1;
   max-width: 100%;
-  height: 0;
+  display: block;
 }
 
 /**
@@ -10576,7 +10576,7 @@ readers do not read off random characters that represent icons */
 .btn--round {
   width: 4.4rem;
   height: 4.4rem;
-  border-radius: 2.2rem;
+  border-radius: 50%;
   font-size: 0;
 }
 .btn--square {
@@ -10671,10 +10671,13 @@ readers do not read off random characters that represent icons */
   width: 100%;
 }
 .sidebar__content {
-  padding: 0 2rem 2rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.sidebar__footer {
+  padding: 0 2rem 2rem;
 }
 .sidebar__img {
   width: 100%;
@@ -10718,6 +10721,7 @@ readers do not read off random characters that represent icons */
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
+
 .main {
   margin-left: 30rem;
   margin-top: 4rem;
@@ -10937,4 +10941,89 @@ readers do not read off random characters that represent icons */
 }
 .new-post__photo-btn {
   cursor: pointer;
+}
+.posts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.post {
+  background-color: #202020;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+.post__header {
+  aspect-ratio: 20/9;
+}
+.post__content {
+  margin: 2.5rem 2.5rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.post__footer {
+  margin-top: 2rem;
+  margin: 0 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.post__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post__video-wrap {
+  margin-bottom: 1rem;
+  aspect-ratio: 20/9;
+}
+.post__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post__title {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.post__text {
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  color: #D2D2D2;
+}
+.post__link-wrap {
+  width: 100%;
+  height: 100%;
+}
+.post__link-wrap:hover {
+  text-decoration: underline;
+}
+.post__date {
+  color: #828282;
+  font-size: 1.2rem;
+}
+.post__tag {
+  font-size: 1.2rem;
+  color: #828282;
+  position: relative;
+}
+.post__tag::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+}
+.post__link {
+  margin-left: auto;
+  font-size: 1.4rem;
+  color: #107EFF;
+}
+.post__link:hover {
+  color: #0071f6;
 }

@@ -1,5 +1,8 @@
 .posts {
 	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
 	}
 	&__item {
 	}
