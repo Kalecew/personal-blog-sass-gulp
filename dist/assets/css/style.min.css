@@ -10768,15 +10768,6 @@ readers do not read off random characters that represent icons */
   grid-template-rows: 19.5rem;
   grid-column-gap: 1.3rem;
 }
-.stories__item {
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
-}
-.stories__link {
-  height: 100%;
-}
-
 .story {
   width: 100%;
   height: 100%;
