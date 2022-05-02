@@ -156,6 +156,7 @@ img {
   /* 1 */
   -ms-interpolation-mode: bicubic;
   /* 2 */
+  display: block;
 }
 
 /**
@@ -10554,7 +10555,7 @@ readers do not read off random characters that represent icons */
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 3;
   width: calc(100% - 30rem);
   height: 4rem;
   background-color: #0D0D0D;
@@ -10577,7 +10578,7 @@ readers do not read off random characters that represent icons */
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   width: 30rem;
   height: 100vh;
   min-height: 61rem;
@@ -10778,7 +10779,16 @@ readers do not read off random characters that represent icons */
 
 .story {
   width: 100%;
+  height: 100%;
   position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+.story:hover .story__img {
+  transform: scale(1.2);
+  transition-duration: 3s;
 }
 .story::before {
   content: "";
@@ -10788,11 +10798,14 @@ readers do not read off random characters that represent icons */
   bottom: 0;
   left: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8));
+  z-index: 1;
 }
 .story__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 1s ease-in-out;
+  transform: scale(1.05);
 }
 .story__header {
   font-size: 1.2rem;
@@ -10802,6 +10815,7 @@ readers do not read off random characters that represent icons */
   left: 1.2rem;
   text-align: left;
   width: calc(100% - 2.4rem);
+  z-index: 2;
 }
 .story__date {
   font-size: 1.2rem;
@@ -10809,4 +10823,5 @@ readers do not read off random characters that represent icons */
   position: absolute;
   bottom: 1.2rem;
   right: 1.2rem;
+  z-index: 2;
 }
