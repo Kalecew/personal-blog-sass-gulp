@@ -1,0 +1,17 @@
+.tags {
+	&__list {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+	&__item {
+	}
+	&__elem {
+		background-color: $tag-bg;
+		font-size: 1.1rem;
+		padding: .5rem 1rem;
+		line-height: 1.2;
+		border-radius: .3rem;
+		white-space: nowrap;
+	}
+}

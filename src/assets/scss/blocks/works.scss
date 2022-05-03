@@ -1,0 +1,14 @@
+.works {
+	&__h1 {
+		margin-bottom: 3rem;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+	&__item {
+	}
+	&__card {
+	}
+}
