@@ -3,4 +3,11 @@
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
+	&__new-post {
+	}
+	&__posts {
+	}
+	&__pagination {
+		margin-top: 5rem;
+	}
 }

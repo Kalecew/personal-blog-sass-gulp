@@ -1,0 +1,30 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	&__list {
+		display: flex;
+		gap: 1rem;
+	}
+	&__item {
+	}
+	&__link {
+		width: 2.85em;
+		height: 2.85em;
+		border-radius: .21em;
+		font-size: 1.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $pagin-bg;
+		box-shadow: 0 0 1rem rgba($pagin-bg, .15);
+		transition: background-color .2s ease-in-out;
+		&--active {
+			background-color: $pagin-bg-active;
+			box-shadow: 0 0 1rem rgba($pagin-bg-active, .15);
+		}
+		&:hover {
+			background-color: $pagin-bg-active;
+			box-shadow: 0 0 1rem rgba($pagin-bg-active, .15);
+		}
+	}
+}

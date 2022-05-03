@@ -426,7 +426,7 @@ body {
    сейчас только для Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #107EFF #0D0D0D;
+  scrollbar-color: #104BE3 #0D0D0D;
 }
 
 /* для Chrome/Edge/Safari */
@@ -440,7 +440,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #107EFF;
+  background-color: #104BE3;
   border-radius: 5px;
   border: 3px solid #0D0D0D;
 }
@@ -10909,6 +10909,9 @@ readers do not read off random characters that represent icons */
   flex-direction: column;
   gap: 3rem;
 }
+.wall__pagination {
+  margin-top: 5rem;
+}
 
 .new-post {
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.45);
@@ -11027,4 +11030,33 @@ readers do not read off random characters that represent icons */
 }
 .post__link:hover {
   color: #0065dc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination__list {
+  display: flex;
+  gap: 1rem;
+}
+.pagination__link {
+  width: 2.85em;
+  height: 2.85em;
+  border-radius: 0.21em;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D0D0D;
+  box-shadow: 0 0 1rem rgba(13, 13, 13, 0.15);
+  transition: background-color 0.2s ease-in-out;
+}
+.pagination__link--active {
+  background-color: #104BE3;
+  box-shadow: 0 0 1rem rgba(16, 75, 227, 0.15);
+}
+.pagination__link:hover {
+  background-color: #104BE3;
+  box-shadow: 0 0 1rem rgba(16, 75, 227, 0.15);
 }
