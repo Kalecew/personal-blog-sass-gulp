@@ -11011,13 +11011,6 @@ readers do not read off random characters that represent icons */
   line-height: 1.5em;
   color: #D2D2D2;
 }
-.post__link-wrap {
-  width: 100%;
-  height: 100%;
-}
-.post__link-wrap:hover {
-  text-decoration: underline;
-}
 .post__date {
   color: #828282;
   font-size: 1.2rem;
