@@ -61,10 +61,16 @@
 	&--transp-blue {
 		background: transparent;
 		color: $text-blue;
+		&:hover {
+			color: darken($text-blue, 10%);
+		}	
 	}
 	&--transp-light {
 		background: transparent;
 		color: $text-light;
+		&:hover {
+			color: darken($text-light, 10%);
+		}	
 	}
 
 	//иконки

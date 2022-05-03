@@ -25,7 +25,7 @@ eval("console.log('file 2');\r\n\n\n//# sourceURL=webpack://brainscloud/./src/as
   \*****************************************/
 /***/ (function() {
 
-eval("function resizeTextarea(textarea) {\r\n  textarea.style.height = 0\r\n  textarea.style.height = textarea.scrollHeight + 1 + \"px\"\r\n  textarea.value.indexOf('\\n') > -1 ? \r\n  \ttextarea.style.width = \"100%\" : \r\n  \ttextarea.cols = textarea.textLength*2\r\n}\r\n~function () {\r\n  var textarea = document.querySelector('#new-post-input')\r\n  textarea.addEventListener('input', function (e) { resizeTextarea(e.target) })\r\n  resizeTextarea(textarea)\r\n}()\r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/resizeTextarea.js?");
+eval("function resizeTextarea(textarea) {\r\n  textarea.style.height = 0\r\n  textarea.style.height = textarea.scrollHeight + 1 + \"px\"\r\n  textarea.value.indexOf('\\n') > -1 ? \r\n  \ttextarea.style.width = \"100%\" : \r\n  \ttextarea.cols = textarea.textLength*2\r\n}\r\n~function () {\r\n  var textarea = document.querySelector('#textarea')\r\n  textarea.addEventListener('input', function (e) { resizeTextarea(e.target) })\r\n  resizeTextarea(textarea)\r\n}()\r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/resizeTextarea.js?");
 
 /***/ })
 

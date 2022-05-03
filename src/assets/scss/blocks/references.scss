@@ -1,0 +1,35 @@
+.references {
+	border: solid $border-dark;
+	border-width: 2px 0;
+	padding: 3rem 0;
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-column-gap: 5rem;
+		grid-row-gap: 2.4rem;
+	}
+	&__item {
+		overflow: hidden;
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		gap: .6rem;
+	}
+	&__link {
+		color: $ref-link;
+		font-size: 1.4rem;
+		font-weight: 500;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&:hover {
+			color: darken($ref-link,10%);
+		}
+	}
+	&__date {
+		color: $text-gray;
+		font-size: 1.2rem;
+	}
+}

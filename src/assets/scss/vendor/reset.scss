@@ -219,6 +219,7 @@ textarea {
     *vertical-align: middle; /* 3 */
     font: inherit;
     border: none;
+    background: none;
 }
 
 button {
@@ -344,7 +345,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: inherit;
 }
 
 

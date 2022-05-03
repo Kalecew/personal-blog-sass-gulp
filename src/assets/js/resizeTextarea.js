@@ -6,7 +6,7 @@ function resizeTextarea(textarea) {
   	textarea.cols = textarea.textLength*2
 }
 ~function () {
-  var textarea = document.querySelector('#new-post-input')
+  var textarea = document.querySelector('#textarea')
   textarea.addEventListener('input', function (e) { resizeTextarea(e.target) })
   resizeTextarea(textarea)
 }()

@@ -34,6 +34,13 @@ body {
     white-space: nowrap;
     clip-path: inset(100%);
 }
+.link-wrap {
+    width: 100%;
+    height: 100%;
+    &:hover {
+        text-decoration: underline;
+    }       
+}
 /* W3C standard
    сейчас только для Firefox */
 * {

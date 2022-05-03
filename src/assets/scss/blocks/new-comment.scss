@@ -1,0 +1,32 @@
+.new-comment {
+	&__form {
+		position: relative;
+	}
+	&__input {
+		width: 100%;
+		font-size: 1.4rem;
+		padding-bottom: .5em;
+		border-bottom: 1px solid $border-gray;
+		margin-bottom: 1.2rem;
+		resize: none;
+		max-height: 50rem;
+		&::placeholder {
+			color: rgba($text-light, .2);
+		}		
+	}
+	&__line {
+		position: absolute;
+		bottom: 4.4rem;
+		left: 0;
+		width: 0%;
+		height: 1px;
+		background-color: $border-blue;
+		transition: width .2s linear;
+	}
+	&__input:focus + &__line {
+		width: 100%;
+	}
+	&__btn {
+
+	}
+}
