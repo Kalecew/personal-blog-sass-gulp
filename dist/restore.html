@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Personal blog | Restore</title>
+</head>
+<body>
+
+    <header class="header">
+    	<div class="header__left">
+    		<nav class="header__nav nav">
+    			<ul class="nav__list">
+    				<li class="nav__item">
+    					<a class="nav__link" href="index.html">Главная</a>
+    				</li>
+    				<li class="nav__item">
+    					<a class="nav__link nav__link--parrent" href="#">Статьи</a>
+    					<div class="nav__children children-nav">
+    						<ul class="children-nav__list">
+    							<li class="children-nav__item">
+    								<a class="children-nav__link" href="#">Создание сайтов</a>
+    							</li>
+    							<li class="children-nav__item">
+    								<a class="children-nav__link" href="#">Интернет-маркетинг</a>
+    							</li>
+    							<li class="children-nav__item">
+    								<a class="children-nav__link" href="#">Продвижение видео</a>
+    							</li>
+    						</ul>
+    					</div>
+    				</li>
+    				<li class="nav__item">
+    					<a class="nav__link" href="#">Обо мне</a>
+    				</li>
+    				<li class="nav__item">
+    					<a class="nav__link" href="#">Реклама</a>
+    				</li>
+    			</ul>
+    		</nav>
+    	</div>
+    	<div class="header__right">
+    		<div class="header__user-buttons user-buttons">
+    			<ul class="user-buttons__list">
+    				<li class="user-buttons__item"><a class="user-buttons__link" href="profile.html">Профиль</a></li>
+    				<li class="user-buttons__item"><a class="user-buttons__link" href="index.html">Выйти</a></li>
+    			</ul>			
+    		</div>
+    		<form class="header__search-form" action="search.html">
+    			<input class="header__search-input" type="search" name="search" placeholder="Поиск по блогу"/>
+    		</form>
+    	</div>
+    </header>
+    <aside class="sidebar">
+    	<header class="sidebar__header">
+    		<img class="sidebar__img" src="assets/images/files/sidebar-img.jpg" alt="Рабочий стол Дмитрия Валака">
+    	</header>
+    	<div class="sidebar__content">
+    		<div class="sidebar__photo-wrap">
+    			<img class="sidebar__photo" src="assets/images/files/photo.jpg" alt="Дмитрий Валак">
+    		</div>
+    		<div class="sidebar__title">Дмитрий Валак</div>
+    		<div class="sidebar__subtitle">блог front-end разработчика</div>
+    		<div class="sidebar__social-buttons social-buttons">
+    			<ul class="social-buttons__list">
+    				<li class="social-buttons__item">
+    					<a href="instagram.com" class="social-buttons__link" target="_blank">instagram<i class="social-buttons__icon social-buttons__icon--instagram fa-brands fa-instagram"></i></a>
+    				</li>
+    				<li class="social-buttons__item">
+    					<a href="vk.com" class="social-buttons__link" target="_blank">vkontakte<i class="social-buttons__icon social-buttons__icon--vk"></i></a>
+    				</li>
+    				<li class="social-buttons__item">
+    					<a href="pinterest.ru" class="social-buttons__link" target="_blank">pinterest<i class="social-buttons__icon social-buttons__icon--pinterest fa-brands fa-pinterest-p"></i></a>
+    				</li>
+    			</ul>
+    		</div>
+    		<p class="sidebar__description">Front-end разработчик. Практик верстки сайтов. Созданием сайтов занимаюсь с <br/>2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.</p>
+    	</div>	
+    	<footer class="sidebar__footer buttons-sidebar">
+    		<ul class="buttons-sidebar__list">
+    			<li class="buttons-sidebar__item">
+    				<a class="buttons-sidebar__btn btn btn--circle btn--red" href="works.html" target="_blank">Мои работы</a>
+    			</li>
+    			<li class="buttons-sidebar__item">
+    				<button class="buttons-sidebar__btn btn btn--circle btn--blue" type="button">Написать мне</button>
+    			</li>
+    		</ul>
+    	</footer>
+    </aside>
+    
+    <main class="main">
+    	<div class="container">
+    		<div class="auth">
+    			<h1 class="auth__h1 h1">Восстановить</h1>
+    			<form class="auth__form form" action="/" method="post">
+    				<div class="form__input-wrap">
+    					<input class="form__input" type="email" placeholder="Ваша почта" required>
+    				</div>
+    				<input class="auth__btn form__btn btn btn--square btn--blue" type="submit" value="Восстановить">
+    				<div class="form__links links-form">
+    					<ul class="links-form__list">
+    						<li class="links-form__item">
+    							<a class="links-form__link" href="signin.html">войти</a>
+    						</li>
+    						<li class="links-form__item">
+    							<a class="links-form__link" href="signup.html">регистрация</a>
+    						</li>
+    					</ul>
+    				</div>
+    			</form>			
+    		</div>
+    	</div>
+    </main>
+    
+
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
