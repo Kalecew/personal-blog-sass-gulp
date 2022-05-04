@@ -394,6 +394,7 @@ body {
 h1 {
   font-size: 2.1rem;
   line-height: 1em;
+  margin-bottom: 3rem;
 }
 
 .container {
@@ -10725,7 +10726,7 @@ readers do not read off random characters that represent icons */
 }
 .sidebar__subtitle {
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #D2D2D2;
   margin-top: 0.4rem;
 }
@@ -10966,9 +10967,6 @@ readers do not read off random characters that represent icons */
 .new-post__photo-btn {
   cursor: pointer;
 }
-.posts__h1 {
-  margin-bottom: 3rem;
-}
 .posts__list {
   display: flex;
   flex-direction: column;
@@ -11122,6 +11120,7 @@ readers do not read off random characters that represent icons */
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.16em;
+  margin-bottom: 0.4rem;
 }
 .page__info {
   display: flex;
@@ -11297,9 +11296,6 @@ readers do not read off random characters that represent icons */
 .message__content {
   margin: 1.5rem 0 1rem;
   font-size: 1.2rem;
-}
-.works__h1 {
-  margin-bottom: 3rem;
 }
 .works__list {
   display: flex;
