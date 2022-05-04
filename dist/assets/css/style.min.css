@@ -11108,28 +11108,28 @@ readers do not read off random characters that represent icons */
   box-shadow: 0 0 1rem rgba(16, 75, 227, 0.15);
 }
 
-.page {
+.article {
   background-color: #202020;
   border-radius: 0.5rem;
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.35);
   padding: 1.3rem 2.5rem 4.2rem;
 }
-.page__actions {
+.article__actions {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.2rem;
 }
-.page__back-link {
+.article__back-link {
   font-size: 1.2rem;
   color: #fff;
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
 }
-.page__back-link:hover {
+.article__back-link:hover {
   opacity: 0.4;
 }
-.page__share-btn {
+.article__share-btn {
   font-size: 1.2rem;
   line-height: 1.1;
   color: #fff;
@@ -11139,37 +11139,37 @@ readers do not read off random characters that represent icons */
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
 }
-.page__share-btn:hover {
+.article__share-btn:hover {
   opacity: 0.4;
 }
-.page__share-btn::after {
+.article__share-btn::after {
   content: "";
   display: inline-block;
   width: 2rem;
   height: 2rem;
   background: url(../images/img/share.svg) center no-repeat;
 }
-.page__h1 {
+.article__h1 {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.16em;
   margin-bottom: 0.4rem;
 }
-.page__info {
+.article__info {
   display: flex;
   gap: 3rem;
   margin-top: 0.6rem;
 }
-.page__date {
+.article__date {
   color: #828282;
   font-size: 1.2rem;
 }
-.page__category {
+.article__category {
   font-size: 1.2rem;
   color: #828282;
   position: relative;
 }
-.page__category::before {
+.article__category::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -11180,41 +11180,41 @@ readers do not read off random characters that represent icons */
   border-radius: 50%;
   background-color: #C4C4C4;
 }
-.page__content * {
+.article__content * {
   margin: 3rem 0;
 }
-.page__content p {
+.article__content p {
   font-size: 1.4rem;
   line-height: 1.5em;
 }
-.page__content img, .page__content video {
+.article__content img, .article__content video {
   max-width: 100%;
   height: auto;
 }
-.page__content h2, .page__content h3, .page__content h4, .page__content h5, .page__content h6 {
+.article__content h2, .article__content h3, .article__content h4, .article__content h5, .article__content h6 {
   font-weight: 700;
   font-size: 1.6rem;
 }
-.page__content ul, .page__content ol {
+.article__content ul, .article__content ol {
   margin: 1rem;
 }
-.page__content ul {
+.article__content ul {
   list-style: circle inside;
 }
-.page__content ol {
+.article__content ol {
   list-style: decimal inside;
 }
-.page__content li {
+.article__content li {
   margin: 0.4rem 0;
 }
-.page__content a {
+.article__content a {
   display: inline;
   color: #107EFF;
 }
-.page__content a:hover {
+.article__content a:hover {
   text-decoration: underline;
 }
-.page__h2 {
+.article__h2 {
   font-size: 1.6rem;
   font-weight: 500;
   margin-bottom: 2rem;
