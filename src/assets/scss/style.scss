@@ -16,9 +16,9 @@
 @import 'repeat/links-form';
 
 // Основные части шаблона
-@import 'blocks/header';
-@import 'blocks/sidebar';
-@import 'blocks/main';
+@import 'partials/header';
+@import 'partials/sidebar';
+@import 'partials/main';
 
 // Остальные блоки
 @import 'blocks/buttons-sidebar';

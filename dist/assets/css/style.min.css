@@ -398,9 +398,12 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 70rem;
   margin: 0 auto;
   padding: 6rem 5rem 8rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -10789,6 +10792,7 @@ readers do not read off random characters that represent icons */
   margin-left: 30rem;
   margin-top: 4rem;
   min-height: calc(100vh - 4rem);
+  display: flex;
 }
 
 .buttons-sidebar {
@@ -11374,6 +11378,12 @@ readers do not read off random characters that represent icons */
   white-space: nowrap;
 }
 
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
 .profile__h1 {
   margin-bottom: 6rem;
 }
@@ -11414,6 +11424,8 @@ readers do not read off random characters that represent icons */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .auth__h1 {
   margin-bottom: 6rem;

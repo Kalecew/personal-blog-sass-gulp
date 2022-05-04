@@ -2,4 +2,5 @@
 	margin-left: $width-sidebar;
 	margin-top: $height-header;
 	min-height: calc(100vh - $height-header);
+	display: flex;
 }

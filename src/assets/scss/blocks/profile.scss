@@ -1,4 +1,8 @@
 .profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
 	&__h1 {
 		margin-bottom: 6rem;
 	}

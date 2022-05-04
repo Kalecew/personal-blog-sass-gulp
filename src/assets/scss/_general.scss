@@ -11,9 +11,12 @@ body {
     margin-bottom: 3rem;
 }
 .container {
+    width: 100%;
     max-width: 70rem;
     margin: 0 auto;
     padding: 6rem 5rem 8rem;
+    display: flex;
+    flex-direction: column;
 }
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
