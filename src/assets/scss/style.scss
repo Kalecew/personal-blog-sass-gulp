@@ -13,6 +13,7 @@
 // Повторяющиеся блоки
 @import 'repeat/btn';
 @import 'repeat/form';
+@import 'repeat/links-form';
 
 // Основные части шаблона
 @import 'blocks/header';
@@ -41,3 +42,4 @@
 @import 'blocks/work';
 @import 'blocks/tags';
 @import 'blocks/profile';
+@import 'blocks/auth';
