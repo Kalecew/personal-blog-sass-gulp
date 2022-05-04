@@ -10657,7 +10657,7 @@ readers do not read off random characters that represent icons */
 .form {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 .form__input-wrap::after {
   content: "";

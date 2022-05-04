@@ -1,8 +1,7 @@
 .form {
 	display: flex;
-	flex-direction: column;
-	
-	gap: 3rem;
+	flex-direction: column;	
+	gap: 2.5rem;
 	&__input-wrap {
 		&::after {
 			content: "";
