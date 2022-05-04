@@ -11054,12 +11054,12 @@ readers do not read off random characters that represent icons */
   color: #828282;
   font-size: 1.2rem;
 }
-.post__tag {
+.post__category {
   font-size: 1.2rem;
   color: #828282;
   position: relative;
 }
-.post__tag::before {
+.post__category::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -11164,12 +11164,12 @@ readers do not read off random characters that represent icons */
   color: #828282;
   font-size: 1.2rem;
 }
-.page__tag {
+.page__category {
   font-size: 1.2rem;
   color: #828282;
   position: relative;
 }
-.page__tag::before {
+.page__category::before {
   content: "";
   position: absolute;
   top: 50%;
