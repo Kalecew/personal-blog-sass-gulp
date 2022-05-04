@@ -1,7 +1,10 @@
-.discusssion {
+.discussion {
 	padding-top: 3rem;
 	&__new-comment {
 		margin-bottom: 5rem;
+	}
+	&__form {
+		gap: 1.2rem;
 	}
 	&__comments {
 		margin-left: -2rem;
