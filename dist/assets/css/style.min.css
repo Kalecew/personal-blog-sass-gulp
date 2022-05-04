@@ -10966,6 +10966,9 @@ readers do not read off random characters that represent icons */
 .new-post__photo-btn {
   cursor: pointer;
 }
+.posts__h1 {
+  margin-bottom: 3rem;
+}
 .posts__list {
   display: flex;
   flex-direction: column;
