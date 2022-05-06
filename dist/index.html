@@ -92,7 +92,7 @@
     				<a class="buttons-sidebar__btn btn btn--circle btn--red" href="works.html">Мои работы</a>
     			</li>
     			<li class="buttons-sidebar__item">
-    				<button class="buttons-sidebar__btn btn btn--circle btn--blue" type="button">Написать мне</button>
+    				<button class="buttons-sidebar__btn btn btn--circle btn--blue" type="button" data-show-modal="contact-modal">Написать мне</button>
     			</li>
     		</ul>
     	</footer>
@@ -138,7 +138,7 @@
     			<h2 class="visually-hidden">Стена</h2>
     			<div class="wall__new-post new-post">
     				<form class="new-post__form" action="/">
-    					<textarea class="new-post__input" id="textarea" placeholder="Напишите что-нибудь" rows="1"></textarea>
+    					<textarea class="new-post__input" data-textarea placeholder="Напишите что-нибудь" rows="1"></textarea>
     					<div class="new-post__buttons">
     						<label class="new-post__photo-btn btn btn--round btn--light fa-solid fa-camera" for="file"></label>
     						<input class="new-post__photo-input hidden" type="file" id="file">
@@ -256,7 +256,60 @@
     
     
 
-
-    <script src="assets/js/app.js"></script>
+    <div class="modal hidden" data-modal="contact-modal">
+    	<div class="modal__overlay" data-modal-overlay>
+    		<div class="modal__content" data-modal-content>
+    			<form class="form" id="form" method="post" action="/">
+    				<div class="form__input-wrap">
+    					<input class="form__input" type="text" name="name" placeholder="Ваше имя" required>		
+    				</div>
+    				<div class="form__input-wrap">
+    					<input class="form__input" type="email" name="email" placeholder="Ваша почта" required>
+    				</div>
+    				<div class="form__input-wrap">
+    					<textarea class="form__input" data-textarea rows="1" placeholder="Текст сообщения"></textarea> 
+    				</div>
+    				<input class="form__btn btn btn--square btn--blue" type="submit" value="Отправить">
+    				<div class="form__links links-form">
+    					<ul class="links-form__list">
+    						<li class="links-form__item">
+    							<div class="links-form__elem links-form__elem--gray">
+    								e-mail: <a class="links-form__link links-form__link--underline" href="mailto:info@mywebsite.ru">info@mywebsite.ru</a>
+    							</div>
+    						</li>
+    						<li class="links-form__item">
+    							<div class="links-form__elem links-form__elem--gray">
+    								тел: <a class="links-form__link links-form__link--underline" href="tel:+94323285622">+943-232-856-22</a>
+    							</div>
+    						</li>
+    					</ul>
+    				</div>
+    			</form>
+    			<button class="modal__close" data-modal-close></button>
+    		</div>	
+    	</div>	
+    </div>    <div class="modal" data-modal="share-modal">
+    	<div class="modal__overlay" data-modal-overlay>
+    		<div class="modal__content" data-modal-content>
+    			<div class="share-buttons">
+    				<ul class="share-buttons__list">
+    					<li class="share-buttons__item">
+    						<a class="share-buttons__link share-buttons__link--facebook" href="#">facebook<i class="share-buttons__icon fa-brands fa-facebook-f"></i></a>
+    					</li>
+    					<li class="share-buttons__item">
+    						<a class="share-buttons__link share-buttons__link--twitter" href="#">twitter<i class="share-buttons__icon fa-brands fa-twitter"></i></a>
+    					</li>
+    					<li class="share-buttons__item">
+    						<a class="share-buttons__link share-buttons__link--vk" href="#">vkontakte</a>
+    					</li>
+    					<li class="share-buttons__item">
+    						<a class="share-buttons__link share-buttons__link--copy" href="#">copy</a>
+    					</li>
+    				</ul>
+    			</div>
+    			<button class="modal__close" data-modal-close></button>
+    		</div>	
+    	</div>	
+    </div>    <script src="assets/js/app.js"></script>
 </body>
 </html>

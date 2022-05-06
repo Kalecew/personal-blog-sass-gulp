@@ -14,11 +14,13 @@
 @import 'repeat/btn';
 @import 'repeat/form';
 @import 'repeat/links-form';
+@import 'repeat/modal';
 
 // Основные части шаблона
 @import 'partials/header';
 @import 'partials/sidebar';
 @import 'partials/main';
+@import 'partials/share-buttons';
 
 // Остальные блоки
 @import 'blocks/buttons-sidebar';

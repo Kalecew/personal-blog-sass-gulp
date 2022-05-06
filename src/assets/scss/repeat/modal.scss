@@ -1,0 +1,54 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: $z-index-modal;
+    &--active {
+
+    }
+    &__overlay {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0, .5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    &__content {
+        position: relative;
+        width: 500px;
+        background-color: $bg-dark-gray;
+        border-radius: .5rem;
+        padding: 8rem;
+    }  
+    &__close {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        overflow: hidden;
+        opacity: 1;
+        transition: opacity .2s ease-in-out;
+        &:hover {
+            opacity: .5;
+        }
+        &::before, &::after {
+            content: "";
+            display: block;
+            background-color: $bg-light;
+            width: 150%;
+            height: .1rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;            
+        }
+        &::before {
+            transform: translate(-50%,-50%) rotate(45deg);
+        }
+        &::after {
+            transform: translate(-50%,-50%) rotate(-45deg);
+        }
+        
+    }
+}

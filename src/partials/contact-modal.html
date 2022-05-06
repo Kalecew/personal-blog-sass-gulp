@@ -1,0 +1,33 @@
+<div class="modal hidden" data-modal="contact-modal">
+	<div class="modal__overlay" data-modal-overlay>
+		<div class="modal__content" data-modal-content>
+			<form class="form" id="form" method="post" action="/">
+				<div class="form__input-wrap">
+					<input class="form__input" type="text" name="name" placeholder="Ваше имя" required>		
+				</div>
+				<div class="form__input-wrap">
+					<input class="form__input" type="email" name="email" placeholder="Ваша почта" required>
+				</div>
+				<div class="form__input-wrap">
+					<textarea class="form__input" data-textarea rows="1" placeholder="Текст сообщения"></textarea> 
+				</div>
+				<input class="form__btn btn btn--square btn--blue" type="submit" value="Отправить">
+				<div class="form__links links-form">
+					<ul class="links-form__list">
+						<li class="links-form__item">
+							<div class="links-form__elem links-form__elem--gray">
+								e-mail: <a class="links-form__link links-form__link--underline" href="mailto:info@mywebsite.ru">info@mywebsite.ru</a>
+							</div>
+						</li>
+						<li class="links-form__item">
+							<div class="links-form__elem links-form__elem--gray">
+								тел: <a class="links-form__link links-form__link--underline" href="tel:+94323285622">+943-232-856-22</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</form>
+			<button class="modal__close" data-modal-close></button>
+		</div>	
+	</div>	
+</div>

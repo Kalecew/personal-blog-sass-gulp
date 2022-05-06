@@ -1,0 +1,41 @@
+.share-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__list {
+		display: flex;
+		gap: 1.5rem;
+	}
+	&__item {
+	}
+	&__link {
+		width: 4.5rem;
+		height: 4.5rem;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0;
+		opacity: 1;
+		transition: opacity .2s ease-in-out;
+		&:hover {
+			opacity: .8;
+		}
+		&--facebook {
+			background-color: $facebook;
+		}
+		&--twitter {
+			background-color: $twitter;
+		}
+		&--vk {
+			background: $vk url('../images/img/vk.svg') center no-repeat;
+			background-size: 4.5rem auto;
+		}
+		&--copy {
+			background: url('../images/img/copy.svg') center no-repeat;
+		}
+	}
+	&__icon {
+		font-size: 2.6rem;
+	}
+}

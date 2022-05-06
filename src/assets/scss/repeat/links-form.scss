@@ -6,9 +6,22 @@
 	}
 	&__item {
 	}
+	&__elem {
+		display: flex;
+		gap: .2rem;
+		&--gray {
+			color: $text-light-gray;
+		}
+	}
 	&__link {
 		&:hover {
 			text-decoration: underline;
+		}
+		&--underline {
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 }

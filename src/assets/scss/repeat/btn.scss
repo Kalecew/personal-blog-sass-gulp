@@ -39,7 +39,7 @@
 		border: 1px solid transparent;
 		color: $text-light;
 		box-shadow: 0 .7rem 1.7rem -1rem rgba($btn-bg-blue, .2);
-		&:hover {
+		&:hover, &:focus {
 			background-color: darken($btn-bg-blue, 10%);
 		}	
 	}

@@ -440,6 +440,10 @@ body {
   text-decoration: underline;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* W3C standard
    сейчас только для Firefox */
 * {
@@ -10619,7 +10623,7 @@ readers do not read off random characters that represent icons */
   color: #fff;
   box-shadow: 0 0.7rem 1.7rem -1rem rgba(49, 55, 201, 0.2);
 }
-.btn--blue:hover {
+.btn--blue:hover, .btn--blue:focus {
   background-color: #272ca0;
 }
 .btn--light {
@@ -10661,6 +10665,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  position: relative;
 }
 .form__input-wrap::after {
   content: "";
@@ -10689,13 +10694,85 @@ readers do not read off random characters that represent icons */
 .form__btn {
   align-self: flex-start;
 }
+.form__links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4rem;
+}
+
 .links-form__list {
   display: flex;
   justify-content: center;
   gap: 1rem;
 }
+.links-form__elem {
+  display: flex;
+  gap: 0.2rem;
+}
+.links-form__elem--gray {
+  color: #D2D2D2;
+}
 .links-form__link:hover {
   text-decoration: underline;
+}
+.links-form__link--underline {
+  text-decoration: underline;
+}
+.links-form__link--underline:hover {
+  text-decoration: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.modal__overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__content {
+  position: relative;
+  width: 500px;
+  background-color: #202020;
+  border-radius: 0.5rem;
+  padding: 8rem;
+}
+.modal__close {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.modal__close:hover {
+  opacity: 0.5;
+}
+.modal__close::before, .modal__close::after {
+  content: "";
+  display: block;
+  background-color: #C4C4C4;
+  width: 150%;
+  height: 0.1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.modal__close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal__close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .header {
@@ -10793,6 +10870,46 @@ readers do not read off random characters that represent icons */
   margin-top: 4rem;
   min-height: calc(100vh - 4rem);
   display: flex;
+}
+
+.share-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-buttons__list {
+  display: flex;
+  gap: 1.5rem;
+}
+.share-buttons__link {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.share-buttons__link:hover {
+  opacity: 0.8;
+}
+.share-buttons__link--facebook {
+  background-color: #3B5998;
+}
+.share-buttons__link--twitter {
+  background-color: #55ACEE;
+}
+.share-buttons__link--vk {
+  background: #4D76A1 url("../images/img/vk.svg") center no-repeat;
+  background-size: 4.5rem auto;
+}
+.share-buttons__link--copy {
+  background: url("../images/img/copy.svg") center no-repeat;
+}
+.share-buttons__icon {
+  font-size: 2.6rem;
 }
 
 .buttons-sidebar {
