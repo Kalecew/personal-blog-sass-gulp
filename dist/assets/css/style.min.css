@@ -10681,30 +10681,32 @@ readers do not read off random characters that represent icons */
   gap: 1.5rem;
 }
 .share-buttons__link {
+  font-size: 0;
+}
+.share-buttons__icon {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0;
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
 }
-.share-buttons__link:hover {
+.share-buttons__icon:hover {
   opacity: 0.8;
 }
-.share-buttons__link--facebook {
-  background-color: #3B5998;
+.share-buttons__icon--facebook {
+  background: #3B5998 url("../images/img/facebook.svg") center no-repeat;
 }
-.share-buttons__link--twitter {
-  background-color: #55ACEE;
+.share-buttons__icon--twitter {
+  background: #55ACEE url("../images/img/twitter.svg") center no-repeat;
 }
-.share-buttons__link--vk {
+.share-buttons__icon--vk {
   background: #4D76A1 url("../images/img/vk.svg") center no-repeat;
   background-size: 4.5rem auto;
 }
-.share-buttons__link--copy {
+.share-buttons__icon--copy {
   background: url("../images/img/copy.svg") center no-repeat;
 }
 .share-buttons__icon {
@@ -10944,22 +10946,16 @@ readers do not read off random characters that represent icons */
   overflow: hidden;
 }
 .social-buttons__icon--instagram {
-  font-size: 2.1rem;
   border-radius: 0.6rem;
-  color: #fff;
-  background: linear-gradient(45deg, #8E7F42, #FF543E, #C837AB);
+  background: url("../images/img/instagram.svg") center no-repeat, linear-gradient(45deg, #8E7F42, #FF543E, #C837AB);
 }
 .social-buttons__icon--vk {
-  font-size: 2.6rem;
   border-radius: 1.3rem;
   background: url("../images/img/vk.svg") center no-repeat;
 }
 .social-buttons__icon--pinterest {
-  font-size: 1.6rem;
   border-radius: 1.3rem;
-  padding-top: 0.1em;
-  color: #fff;
-  background-color: #CB2027;
+  background: #CB2027 url("../images/img/pinterest.svg") center 60% no-repeat;
 }
 
 .nav__list {

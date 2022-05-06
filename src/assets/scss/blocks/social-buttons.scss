@@ -18,22 +18,16 @@
 		justify-content: center;
 		overflow: hidden;
 		&--instagram {
-			font-size: 2.1rem;
 			border-radius: .6rem;
-			color: $text-light;
-			background: linear-gradient(45deg, $instagram1, $instagram2, $instagram3);
+			background: url('../images/img/instagram.svg') center no-repeat, linear-gradient(45deg, $instagram1, $instagram2, $instagram3);
 		}
 		&--vk {
-			font-size: 2.6rem;
 			border-radius: 1.3rem;
 			background: url('../images/img/vk.svg') center no-repeat;
 		}
 		&--pinterest {
-			font-size: 1.6rem;
 			border-radius: 1.3rem;
-			padding-top: 0.1em;
-			color: $text-light;
-			background-color: $pinterest;
+			background: $pinterest url('../images/img/pinterest.svg') center 60% no-repeat;
 		}
 	}
 }
