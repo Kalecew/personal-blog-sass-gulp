@@ -10,19 +10,15 @@
 @import 'vendor/fontawesome/solid';
 @import 'vendor/fontawesome/brands';
 
-// Повторяющиеся блоки
-@import 'repeat/btn';
-@import 'repeat/form';
-@import 'repeat/links-form';
-@import 'repeat/modal';
 
-// Основные части шаблона
-@import 'partials/header';
-@import 'partials/sidebar';
-@import 'partials/main';
-@import 'partials/share-buttons';
-
-// Остальные блоки
+@import 'blocks/header';
+@import 'blocks/sidebar';
+@import 'blocks/main';
+@import 'blocks/share-buttons';
+@import 'blocks/btn';
+@import 'blocks/form';
+@import 'blocks/links-form';
+@import 'blocks/modal';
 @import 'blocks/buttons-sidebar';
 @import 'blocks/social-buttons';
 @import 'blocks/nav';

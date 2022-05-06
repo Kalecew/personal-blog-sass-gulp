@@ -1,7 +1,14 @@
 
-const contactBtns = document.querySelectorAll('[data-show-modal]')
+const showModalBtns = document.querySelectorAll('[data-show-modal]')
 const overlays = document.querySelectorAll('[data-modal-overlay]')
 const closeBtns = document.querySelectorAll('[data-modal-close]')
+const stopVideo = (modal) => {
+	if (video = modal.querySelector('video')) {
+		video.pause()
+	} else if (video = modal.querySelector('iframe')) {
+		video.src = video.src;
+	}	
+}
 const showModal = (e) => {
 	const data = e.target.dataset.showModal
 	const modal = document.querySelector(`[data-modal=${data}]`)
@@ -13,9 +20,10 @@ const hideModal = (e) => {
 	if ((data.modalOverlay !== undefined)  ||  (data.modalClose !== undefined)) {
 		e.target.closest('[data-modal]').classList.add('hidden')	
 		document.body.classList.remove('no-scroll')
+		stopVideo(e.target)	
 	}
 }
-contactBtns.forEach((item) => {
+showModalBtns.forEach((item) => {
 	item.addEventListener('click', showModal)
 })
 overlays.forEach((item) => {
