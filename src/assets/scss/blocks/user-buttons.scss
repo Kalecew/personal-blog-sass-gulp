@@ -1,6 +1,9 @@
 .user-buttons {
 	&__list {
 		display: flex;
+		@include breakpoint($notebook) {
+			flex-direction: column;
+		}
 	}
 	&__item {
 		transition: background-color .2s linear;
@@ -12,5 +15,11 @@
 		text-transform: uppercase;
 		padding: 1.4rem;
 		font-size: 1.1rem;
+		@include breakpoint($notebook) {
+			font-size: 1.6rem;
+			font-weight: 300;
+			text-transform: none;
+			padding: .8rem 1rem;
+		}
 	}
 }

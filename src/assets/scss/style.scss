@@ -3,7 +3,9 @@
 
 // Общие стили
 @import 'vars';
+@import 'mixins';
 @import 'general';
+
 
 // fontawesome
 @import 'vendor/fontawesome/fontawesome';
@@ -41,3 +43,4 @@
 @import 'blocks/tags';
 @import 'blocks/profile';
 @import 'blocks/auth';
+@import 'blocks/burger';

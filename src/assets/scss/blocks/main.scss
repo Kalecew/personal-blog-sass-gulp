@@ -3,4 +3,8 @@
 	margin-top: $height-header;
 	min-height: calc(100vh - $height-header);
 	display: flex;
+	@include breakpoint($notebook) {
+		width: 100%;
+		margin-left: 0;
+	}
 }

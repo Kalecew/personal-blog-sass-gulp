@@ -43,13 +43,23 @@ $facebook: 		#3B5998;
 $twitter:		#55ACEE;
 
 $scroll-track: #0D0D0D;
-$scroll-thumb: #3137C9;
+$scroll-thumb: #181818;
 
-$z-index-modal: 		4;
-$z-index-sidebar: 		3;
-$z-index-header: 		3;
+
+
 $z-index-overlay-story: 1;
 $z-index-text-story:	2;
+$z-index-sidebar-active:3;
+$z-index-sidebar: 		4;
+$z-index-header: 		4;
+$z-index-modal: 		5;
 
 $width-sidebar: 30rem;
 $height-header: 4rem;
+
+
+
+$notebook: 	1024px;
+$tablet: 	768px;
+$mobileL: 	425px;
+$mobileM: 	375px;

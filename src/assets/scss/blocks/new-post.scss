@@ -17,6 +17,9 @@
 		max-height: 50rem;
 		color: $text-light;
 		resize: none;
+		@include breakpoint($mobileL) {
+			width: 100%;
+		}
 		&::placeholder {
 			color: $text-light-gray;
 		}

@@ -27,6 +27,16 @@ eval("\r\nconst showModalBtns = document.querySelectorAll('[data-show-modal]')\r
 
 eval("const resizeTextarea = (textarea) => {\r\n  textarea.style.height = 0\r\n  textarea.style.height = textarea.scrollHeight + 1 + \"px\"\r\n  textarea.value.indexOf('\\n') > -1 ? \r\n  \ttextarea.style.width = \"100%\" : \r\n  \ttextarea.cols = textarea.textLength*2\r\n}\r\nvar textarea = document.querySelectorAll('[data-textarea]')\r\ntextarea.forEach(function(item) {\r\n  item.addEventListener('input', (e) => { resizeTextarea(e.target) })\r\n  resizeTextarea(item)\r\n})  \r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/resizeTextarea.js?");
 
+/***/ }),
+
+/***/ "./src/assets/js/sidebar.js":
+/*!**********************************!*\
+  !*** ./src/assets/js/sidebar.js ***!
+  \**********************************/
+/***/ (function() {
+
+eval("const burger = document.querySelector('#burger')\r\nconst sidebar = document.querySelector('#sidebar')\r\nconst toggleSidebar = () => {\r\n\tburger.classList.toggle('burger--active')\r\n\tsidebar.classList.toggle('sidebar--active')\r\n}\r\nburger.addEventListener('click', toggleSidebar);\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/sidebar.js?");
+
 /***/ })
 
 /******/ 	});
@@ -36,8 +46,9 @@ eval("const resizeTextarea = (textarea) => {\r\n  textarea.style.height = 0\r\n 
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	__webpack_modules__["./src/assets/js/modals.js"]();
-/******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/assets/js/resizeTextarea.js"]();
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/assets/js/sidebar.js"]();
 /******/ 	
 /******/ })()
 ;
