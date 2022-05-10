@@ -7,11 +7,6 @@
 	}
 	&__item {
 		transition: background-color .2s linear;
-		// @include breakpoint($notebook) {
-		// 	&:hover {
-		// 		background-color: inherit;
-		// 	}
-		// }
 		&:hover {
 			background-color: $bg-child-nav;
 			@include breakpoint($notebook) {
