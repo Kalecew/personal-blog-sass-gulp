@@ -11144,11 +11144,12 @@ readers do not read off random characters that represent icons */
 }
 .nav__link {
   text-transform: uppercase;
-  padding: 1.3rem;
+  padding: 1.4rem;
   font-size: 1.1rem;
   display: flex;
   align-items: center;
   gap: 1.1rem;
+  white-space: nowrap;
 }
 @media (max-width: 1024px) {
   .nav__link {

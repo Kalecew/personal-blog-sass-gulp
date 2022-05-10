@@ -22,11 +22,12 @@
 	}
 	&__link {
 		text-transform: uppercase;
-		padding: 1.3rem;
+		padding: 1.4rem;
 		font-size: 1.1rem;
 		display: flex;
 		align-items: center;
 		gap: 1.1rem;
+		white-space: nowrap;
 		@include breakpoint($notebook) {
 			text-transform: none;
 			font-weight: 300;
