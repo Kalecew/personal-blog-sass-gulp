@@ -10882,6 +10882,12 @@ readers do not read off random characters that represent icons */
   border-radius: 50%;
   font-size: 0;
 }
+@media (max-width: 425px) {
+  .btn--round {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+}
 .btn--square {
   border-radius: 0.5rem;
   padding: 0.7em 1.25em;
@@ -11343,6 +11349,11 @@ readers do not read off random characters that represent icons */
 .wall__pagination {
   margin-top: 5rem;
 }
+@media (max-width: 425px) {
+  .wall__pagination {
+    margin-top: 2rem;
+  }
+}
 
 .new-post {
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.45);
@@ -11359,7 +11370,7 @@ readers do not read off random characters that represent icons */
   font-size: 1.5rem;
   padding: 1.87em;
   line-height: 1.2;
-  min-width: 70%;
+  min-width: 64%;
   max-width: 100%;
   max-height: 50rem;
   color: #fff;
@@ -11367,7 +11378,8 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 425px) {
   .new-post__input {
-    width: 100%;
+    min-width: 66%;
+    padding: 1.2em 0.87em;
   }
 }
 .new-post__input::placeholder {
@@ -11378,6 +11390,16 @@ readers do not read off random characters that represent icons */
   gap: 2rem;
   align-self: flex-end;
   margin: 1.5rem 2rem 1.5rem auto;
+}
+@media (max-width: 768px) {
+  .new-post__buttons {
+    gap: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .new-post__buttons {
+    margin: 1rem 1rem 1rem auto;
+  }
 }
 .new-post__photo-btn {
   cursor: pointer;
@@ -11393,18 +11415,44 @@ readers do not read off random characters that represent icons */
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.45);
   overflow: hidden;
 }
+.post__container {
+  margin: 2.5rem;
+}
+@media (max-width: 425px) {
+  .post__container {
+    margin: 2rem 1.5rem;
+  }
+}
+.post__header {
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 425px) {
+  .post__header {
+    margin-bottom: 2rem;
+  }
+}
 .post__content {
-  margin: 2.5rem 2.5rem 2rem 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (max-width: 425px) {
+  .post__content {
+    gap: 2rem;
+  }
+}
 .post__footer {
   margin-top: 2rem;
-  margin: 0 2.5rem 2.5rem 2.5rem;
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+@media (max-width: 425px) {
+  .post__footer {
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+  }
 }
 .post__img-wrap {
   aspect-ratio: 20/9;
@@ -11415,7 +11463,6 @@ readers do not read off random characters that represent icons */
   object-fit: cover;
 }
 .post__video-wrap {
-  margin: 2.5rem 2.5rem 0 2.5rem;
   aspect-ratio: 20/9;
 }
 .post__video {
@@ -11456,6 +11503,11 @@ readers do not read off random characters that represent icons */
   margin-left: auto;
   font-size: 1.4rem;
   color: #107EFF;
+}
+@media (max-width: 425px) {
+  .post__link {
+    width: 100%;
+  }
 }
 .post__link:hover {
   color: #0065dc;

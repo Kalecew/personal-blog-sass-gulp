@@ -9,5 +9,8 @@
 	}
 	&__pagination {
 		margin-top: 5rem;
+		@include breakpoint($mobileL) {
+			margin-top: 2rem;
+		}
 	}
 }
