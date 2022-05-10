@@ -11040,6 +11040,13 @@ readers do not read off random characters that represent icons */
   background-color: #202020;
   border-radius: 0.5rem;
   padding: 8rem;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+.modal__content--hidden {
+  opacity: 0;
+  transform: translateY(-5rem);
 }
 .modal__content--story {
   width: auto;

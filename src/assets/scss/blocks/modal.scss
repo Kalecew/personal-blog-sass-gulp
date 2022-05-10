@@ -20,6 +20,13 @@
         background-color: $bg-dark-gray;
         border-radius: .5rem;
         padding: 8rem;
+        transition: all .2s ease-in-out;
+        opacity: 1;
+        transform: translateY(0);
+        &--hidden {
+           opacity: 0; 
+           transform: translateY(-5rem);
+        }
         &--story {
             width: auto;
             border-radius: 0;
