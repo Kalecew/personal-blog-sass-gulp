@@ -1,4 +1,5 @@
 const resizeTextarea = textarea => {
+  console.log(textarea.height)
   textarea.style.height = 0
   textarea.style.height = textarea.scrollHeight + 1 + "px"
   textarea.value.indexOf('\n') > -1 ? 
@@ -8,5 +9,4 @@ const resizeTextarea = textarea => {
 var textarea = document.querySelectorAll('[data-textarea]')
 textarea.forEach(item => {
   item.addEventListener('input', (e) => { resizeTextarea(e.target) })
-  resizeTextarea(item)
 })  

@@ -10994,11 +10994,22 @@ readers do not read off random characters that represent icons */
   right: 0;
   margin-top: 4rem;
 }
+@media (max-width: 425px) {
+  .form__links {
+    margin-top: 2rem;
+  }
+}
 
 .links-form__list {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+@media (max-width: 425px) {
+  .links-form__list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .links-form__elem {
   display: flex;
@@ -11043,6 +11054,11 @@ readers do not read off random characters that represent icons */
   transition: all 0.2s ease-in-out;
   opacity: 1;
   transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .modal__content {
+    padding: 8rem 5rem;
+  }
 }
 .modal__content--hidden {
   opacity: 0;

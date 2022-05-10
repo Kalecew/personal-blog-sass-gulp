@@ -25,7 +25,7 @@ eval("\r\nconst showModalBtns = document.querySelectorAll('[data-show-modal]')\r
   \*****************************************/
 /***/ (function() {
 
-eval("const resizeTextarea = textarea => {\r\n  textarea.style.height = 0\r\n  textarea.style.height = textarea.scrollHeight + 1 + \"px\"\r\n  textarea.value.indexOf('\\n') > -1 ? \r\n  \ttextarea.style.width = \"100%\" : \r\n  \ttextarea.cols = textarea.textLength*2\r\n}\r\nvar textarea = document.querySelectorAll('[data-textarea]')\r\ntextarea.forEach(item => {\r\n  item.addEventListener('input', (e) => { resizeTextarea(e.target) })\r\n  resizeTextarea(item)\r\n})  \r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/resizeTextarea.js?");
+eval("const resizeTextarea = textarea => {\r\n  console.log(textarea.height)\r\n  textarea.style.height = 0\r\n  textarea.style.height = textarea.scrollHeight + 1 + \"px\"\r\n  textarea.value.indexOf('\\n') > -1 ? \r\n  \ttextarea.style.width = \"100%\" : \r\n  \ttextarea.cols = textarea.textLength*2\r\n}\r\nvar textarea = document.querySelectorAll('[data-textarea]')\r\ntextarea.forEach(item => {\r\n  item.addEventListener('input', (e) => { resizeTextarea(e.target) })\r\n})  \r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/resizeTextarea.js?");
 
 /***/ }),
 

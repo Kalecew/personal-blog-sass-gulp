@@ -23,6 +23,9 @@
         transition: all .2s ease-in-out;
         opacity: 1;
         transform: translateY(0);
+        @include breakpoint($tablet) {
+            padding: 8rem 5rem;
+        }
         &--hidden {
            opacity: 0; 
            transform: translateY(-5rem);

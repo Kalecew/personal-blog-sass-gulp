@@ -3,6 +3,10 @@
 		display: flex;
 		justify-content: center;
 		gap: 1rem;
+		@include breakpoint($mobileL) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__item {
 	}
