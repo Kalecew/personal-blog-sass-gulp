@@ -10,7 +10,7 @@ const stopVideo = modal => {
 	}	
 }
 const showModal = e => {
-	const data = e.target.dataset.showModal
+	const data = e.currentTarget.dataset.showModal
 	const modal = document.querySelector(`[data-modal=${data}]`)
 	modal.classList.remove('hidden')
 	document.body.classList.add('no-scroll')
