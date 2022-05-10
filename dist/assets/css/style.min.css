@@ -11217,6 +11217,11 @@ readers do not read off random characters that represent icons */
 .user-buttons__item:hover {
   background-color: #3137C9;
 }
+@media (max-width: 1024px) {
+  .user-buttons__item:hover {
+    background-color: inherit;
+  }
+}
 .user-buttons__link {
   text-transform: uppercase;
   padding: 1.4rem;
@@ -11228,6 +11233,9 @@ readers do not read off random characters that represent icons */
     font-weight: 300;
     text-transform: none;
     padding: 0.8rem 1rem;
+  }
+  .user-buttons__link:hover {
+    color: #107EFF;
   }
 }
 

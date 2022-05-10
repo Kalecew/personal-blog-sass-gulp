@@ -7,9 +7,18 @@
 	}
 	&__item {
 		transition: background-color .2s linear;
+		// @include breakpoint($notebook) {
+		// 	&:hover {
+		// 		background-color: inherit;
+		// 	}
+		// }
 		&:hover {
 			background-color: $bg-child-nav;
+			@include breakpoint($notebook) {
+				background-color: inherit;
+			}
 		}
+
 	}
 	&__link {
 		text-transform: uppercase;
@@ -20,6 +29,9 @@
 			font-weight: 300;
 			text-transform: none;
 			padding: .8rem 1rem;
+			&:hover {
+				color: $text-blue;
+			}
 		}
 	}
 }
