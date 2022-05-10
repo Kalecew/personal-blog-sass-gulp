@@ -11661,9 +11661,14 @@ readers do not read off random characters that represent icons */
 .references__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: 1fr;
   grid-column-gap: 5rem;
   grid-row-gap: 2.4rem;
+}
+@media (max-width: 425px) {
+  .references__list {
+    grid-template-columns: 1fr;
+  }
 }
 .references__item {
   overflow: hidden;
