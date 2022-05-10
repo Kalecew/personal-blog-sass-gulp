@@ -10954,6 +10954,11 @@ readers do not read off random characters that represent icons */
   gap: 2.5rem;
   position: relative;
 }
+@media (max-width: 375px) {
+  .form {
+    gap: 1.5rem;
+  }
+}
 .form__input-wrap::after {
   content: "";
   display: block;
@@ -11815,13 +11820,28 @@ readers do not read off random characters that represent icons */
 .profile__h1 {
   margin-bottom: 6rem;
 }
+@media (max-width: 425px) {
+  .profile__h1 {
+    margin-bottom: 4rem;
+  }
+}
 .profile__content {
   display: flex;
   gap: 3rem;
   justify-content: space-between;
 }
+@media (max-width: 425px) {
+  .profile__content {
+    flex-direction: column-reverse;
+  }
+}
 .profile__left {
   width: 34rem;
+}
+@media (max-width: 425px) {
+  .profile__left {
+    width: 100%;
+  }
 }
 .profile__right {
   display: flex;
@@ -11832,6 +11852,12 @@ readers do not read off random characters that represent icons */
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
   width: 15rem;
   height: 15rem;
+}
+@media (max-width: 375px) {
+  .profile__photo-wrap {
+    width: 13rem;
+    height: 13rem;
+  }
 }
 .profile__photo {
   width: 100%;

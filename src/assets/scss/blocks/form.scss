@@ -3,6 +3,9 @@
 	flex-direction: column;	
 	gap: 2.5rem;
 	position: relative;
+	@include breakpoint($mobileM) {
+		gap: 1.5rem;
+	}
 	&__input-wrap {
 		&::after {
 			content: "";
