@@ -11260,11 +11260,30 @@ readers do not read off random characters that represent icons */
   }
 }
 
+@media (max-width: 768px) {
+  .stories {
+    height: 19.5rem;
+    overflow-Y: hidden;
+  }
+}
 .stories__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 19.5rem;
   grid-column-gap: 1.3rem;
+}
+@media (max-width: 768px) {
+  .stories__list {
+    grid-template-columns: repeat(4, 14rem);
+    overflow-Y: hidden;
+    overflow-x: auto;
+    height: 105%;
+  }
+}
+@media (max-width: 375px) {
+  .stories__list {
+    grid-template-columns: repeat(4, 12rem);
+  }
 }
 .story {
   width: 100%;

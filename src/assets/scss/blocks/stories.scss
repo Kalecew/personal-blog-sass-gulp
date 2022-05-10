@@ -1,9 +1,22 @@
 .stories {
+	@include breakpoint($tablet) {
+		height: 19.5rem;
+		overflow-Y: hidden;
+	}
 	&__list {		
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 19.5rem;
 		grid-column-gap: 1.3rem;
+		@include breakpoint($tablet) {
+			grid-template-columns: repeat(4, 14rem);
+			overflow-Y: hidden;
+	    	overflow-x: auto;
+	    	height: 105%;
+		}		
+		@include breakpoint($mobileM) {
+			grid-template-columns: repeat(4, 12rem);
+		}
 	}
 	&__item {
 		
