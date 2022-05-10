@@ -10714,7 +10714,7 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 1024px) {
   .sidebar__footer {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 .sidebar__img {
