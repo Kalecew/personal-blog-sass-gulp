@@ -35,7 +35,7 @@ eval("const resizeTextarea = textarea => {\r\n  textarea.style.height = 0\r\n  t
   \**********************************/
 /***/ (function() {
 
-eval("const burger = document.querySelector('#burger')\r\nconst sidebar = document.querySelector('#sidebar')\r\nconst toggleSidebar = () => {\r\n\tburger.classList.toggle('burger--active')\r\n\tsidebar.classList.toggle('sidebar--active')\r\n}\r\nburger.addEventListener('click', toggleSidebar);\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/sidebar.js?");
+eval("const burger = document.querySelector('#burger')\r\nconst sidebar = document.querySelector('#sidebar')\r\nconst body = document.body\r\nconst toggleSidebar = () => {\r\n\tburger.classList.toggle('burger--active')\r\n\tsidebar.classList.toggle('sidebar--active')\r\n}\r\nconst closeSidebar = e => {\r\n\tconst $this = e.target\r\n\tif ($this.id !== \"burger\") {\r\n\t\tburger.classList.remove('burger--active')\r\n\t\tsidebar.classList.remove('sidebar--active')\r\n\t}\t\r\n}\r\nburger.addEventListener('click', toggleSidebar)\r\nbody.addEventListener('click', closeSidebar)\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/sidebar.js?");
 
 /***/ })
 
