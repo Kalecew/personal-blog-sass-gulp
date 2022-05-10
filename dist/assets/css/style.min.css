@@ -10637,6 +10637,11 @@ readers do not read off random characters that represent icons */
   background-color: #202020;
   padding: 0 2rem !important;
 }
+@media (max-width: 425px) {
+  .header__search-input {
+    font-size: 1.6rem;
+  }
+}
 
 .sidebar {
   position: fixed;

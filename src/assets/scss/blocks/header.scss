@@ -48,5 +48,8 @@
 		font-size: 1.2rem;
 		background-color: $bg-dark-gray;
 		padding: 0 2rem !important;
+		@include breakpoint($mobileL) {
+			font-size: 1.6rem;
+		}
 	}
 }
