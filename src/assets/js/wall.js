@@ -289,13 +289,18 @@ const renderPaginations = currentPage => {
 	)
 }
 const loadPaginations = currentPage => {
-	const paginationsList = document.querySelector('#pagination')	
+	const paginationsList = document.querySelector('#pagination-list')	
 	paginationsList.innerHTML = renderPaginations(currentPage)
 	document.querySelectorAll('[data-pagination]').forEach(elem => {
 		elem.addEventListener('click', flipWall)
 	})
 }
 const changePagination = currentPage => {
+	if (pagesCount === 1) {
+		const paginationBlock = document.querySelector('#pagination')
+		paginationBlock.remove()
+		return false
+	}
 	loadPaginations(currentPage)
 	const paginations = document.querySelectorAll('[data-pagination]')
 	paginations.forEach(elem => elem.classList.remove("pagination__link--active"))
