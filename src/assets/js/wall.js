@@ -145,9 +145,18 @@ const posts = [
 	},
 ]
 
+
+const filterPosts = () => {
+	const path = window.location.pathname.substring(1)
+	if (path == "index.html") return posts
+	else {
+		return posts.filter(post => post.category !== null && post.category.link === path)
+	}
+}
 let currentPage = 1
 const postsCount = 4
-const allPostsCount = posts.length
+const allPostsCount = filterPosts().length
+// console.log(allPostsCount)
 const pagesCount = Math.ceil(allPostsCount / postsCount)
 
 
@@ -312,7 +321,7 @@ const loadPosts = () => {
 	postsList.innerHTML = ""
 	for (var i = postsCount*(currentPage-1); i < postsCount*currentPage; i++) {
 		if (i === allPostsCount) return false
-		postsList.innerHTML += renderPost(posts[i])
+		postsList.innerHTML += renderPost(filterPosts()[i])
 	}	
 }
 const scrollTop = () => {
@@ -335,8 +344,11 @@ const flipWall = e => {
 	loadPosts()
 	scrollTop()
 }
-changePagination(1)
-loadPosts()
+const wall = document.querySelector('#wall')
+if (wall !== null) {
+	changePagination(1)
+	loadPosts()
+}
 
 
 

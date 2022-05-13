@@ -11303,6 +11303,9 @@ readers do not read off random characters that represent icons */
   }
 }
 
+.stories {
+  margin-bottom: 3rem;
+}
 @media (max-width: 768px) {
   .stories {
     height: 19.5rem;
@@ -11378,7 +11381,6 @@ readers do not read off random characters that represent icons */
 }
 
 .wall {
-  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;

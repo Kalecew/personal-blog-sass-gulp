@@ -1,4 +1,5 @@
 .stories {
+	margin-bottom: 3rem;
 	@include breakpoint($tablet) {
 		height: 19.5rem;
 		overflow-Y: hidden;
