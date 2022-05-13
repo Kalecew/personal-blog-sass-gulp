@@ -18,13 +18,21 @@
 		background-color: $pagin-bg;
 		box-shadow: 0 0 1rem rgba($pagin-bg, .15);
 		transition: background-color .2s ease-in-out;
+		&:hover {
+			background-color: $pagin-bg-active;
+			box-shadow: 0 0 1rem rgba($pagin-bg-active, .15);
+		}
 		&--active {
 			background-color: $pagin-bg-active;
 			box-shadow: 0 0 1rem rgba($pagin-bg-active, .15);
 		}
-		&:hover {
-			background-color: $pagin-bg-active;
-			box-shadow: 0 0 1rem rgba($pagin-bg-active, .15);
+		
+		&[disabled] {
+			&:hover {
+				background-color: $pagin-bg;
+				box-shadow: 0 0 1rem rgba($pagin-bg, .15);
+				cursor: default;
+			}
 		}
 	}
 }

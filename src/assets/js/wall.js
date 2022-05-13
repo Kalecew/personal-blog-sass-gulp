@@ -250,50 +250,58 @@ const renderPost = post => {
 
 
 
-const renderPaginations = pagesCount => { 
+const renderPaginations = currentPage => { 
 	const renderPrev = () => {
+		const disabled = currentPage == 1 ? "disabled" : ""
 		return `
 			<li class="pagination__item">
-				<button class="pagination__link" type="button" data-pagination="prev">&lt;</a>
+				<button class="pagination__link" data-pagination="prev" ${disabled} type="button">&lt;</button>
 			</li>
 		`
 	}
 	const renderPages = () => {
+		const start = currentPage == 1 ? 1 : currentPage == pagesCount ? currentPage - 2 : currentPage - 1
 		let result = ""
-		for (var i = 1; i <= pagesCount; i++) {
+		let j = 1
+		for (var i = start; i <= pagesCount; i++) {
 			result += `
 				<li class="pagination__item">
-					<button class="pagination__link" type="button" data-pagination="${i}">${i}</a>
+					<button class="pagination__link" data-pagination="${i}" type="button">${i}</button>
 				</li>
 			`
+			if (j === 3) break 
+			else j++
 		}
 		return result
 	}
 	const renderNext = () => {
+		const disabled = currentPage == pagesCount ? "disabled" : ""
 		return `
 			<li class="pagination__item">
-				<button class="pagination__link" type="button" data-pagination="next">&gt;</a>
+				<button class="pagination__link" data-pagination="next" ${disabled} type="button">&gt;</button>
 			</li>
 		`
-	}
-	return renderPrev() + renderPages() + renderNext()
+	}		
+	return (
+		renderPrev() +
+		renderPages() +
+		renderNext()
+	)
+}
+const loadPaginations = currentPage => {
+	const paginationsList = document.querySelector('#pagination')	
+	paginationsList.innerHTML = renderPaginations(currentPage)
+	document.querySelectorAll('[data-pagination]').forEach(elem => {
+		elem.addEventListener('click', flipWall)
+	})
 }
 const changePagination = currentPage => {
+	loadPaginations(currentPage)
 	const paginations = document.querySelectorAll('[data-pagination]')
 	paginations.forEach(elem => elem.classList.remove("pagination__link--active"))
 	const currentPagination = document.querySelector(`[data-pagination="${currentPage}"]`)
 	currentPagination.classList.add("pagination__link--active")
 }
-const loadPaginations = pagesCount => {
-	const paginationsList = document.querySelector('#pagination')	
-	paginationsList.innerHTML = renderPaginations(pagesCount)
-	changePagination(1)
-}
-
-
-
-
-
 const loadPosts = () => {
 	const postsList = document.querySelector('#posts')		
 	postsList.innerHTML = ""
@@ -302,25 +310,29 @@ const loadPosts = () => {
 		postsList.innerHTML += renderPost(posts[i])
 	}	
 }
+const scrollTop = () => {
+	const top = document.querySelector("#top")
+	top.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+}
 const flipWall = e => {
 	const data = e.target.dataset.pagination
 	if(data === "prev" && currentPage != 1) {
 		currentPage--
 	} else if(data === "next" && currentPage != pagesCount) {
-		console.log(currentPage)
-		console.log(pagesCount)
 		currentPage++
 	} else if(parseInt(data)){		
 		currentPage = data
 	}
-
 	changePagination(currentPage)
 	loadPosts()
+	scrollTop()
 }
-
-loadPaginations(pagesCount)
+changePagination(1)
 loadPosts()
 
-document.querySelectorAll('[data-pagination]').forEach(elem => {
-	elem.addEventListener('click', flipWall)
-})
+
+
+
