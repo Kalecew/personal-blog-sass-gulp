@@ -1,2 +1,0 @@
-# personal-blog-sass-gulp
- 
