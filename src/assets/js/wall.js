@@ -147,7 +147,8 @@ const posts = [
 
 
 const filterPosts = () => {
-	const path = window.location.pathname.substring(1)
+	let path = window.location.pathname
+	path = path.substring(path.lastIndexOf("/")+1)
 	if (path === "index.html" || path === "") return posts
 	else {
 		return posts.filter(post => post.category !== null && post.category.link === path)
