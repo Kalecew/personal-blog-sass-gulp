@@ -11132,7 +11132,10 @@ readers do not read off random characters that represent icons */
 .share-buttons__list {
     display: -ms-flexbox;
     display: flex;
-    gap: 1.5rem;
+}
+
+.share-buttons__item + .share-buttons__item {
+    margin-left: 1.5rem;
 }
 
 .share-buttons__link {
@@ -11286,13 +11289,16 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 2.5rem;
     position: relative;
 }
 
+.form__input-wrap + .form__input-wrap {
+    margin-top: 2.5rem;
+}
+
 @media (max-width: 375px) {
-    .form {
-        gap: 1.5rem;
+    .form__input-wrap + .form__input-wrap {
+        margin-top: 1.5rem;
     }
 }
 
@@ -11343,6 +11349,17 @@ readers do not read off random characters that represent icons */
 .form__btn {
     -ms-flex-item-align: start;
     align-self: flex-start;
+    margin-top: 2.5rem;
+}
+
+.form__btn--discussion {
+    margin-top: 1.2rem;
+}
+
+@media (max-width: 375px) {
+    .form__btn {
+        margin-top: 1.5rem;
+    }
 }
 
 .form__links {
@@ -11364,7 +11381,6 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 1rem;
 }
 
 @media (max-width: 425px) {
@@ -11376,14 +11392,27 @@ readers do not read off random characters that represent icons */
     }
 }
 
+.links-form__item + .links-form__item {
+    margin: 0 0 0 1rem;
+}
+
+@media (max-width: 425px) {
+    .links-form__item + .links-form__item {
+        margin: 1rem 0 0 0;
+    }
+}
+
 .links-form__elem {
     display: -ms-flexbox;
     display: flex;
-    gap: 0.2rem;
 }
 
 .links-form__elem--gray {
     color: #D2D2D2;
+}
+
+.links-form__link {
+    margin-left: 0.2rem;
 }
 
 .links-form__link:hover {
@@ -11508,7 +11537,10 @@ readers do not read off random characters that represent icons */
 .social-buttons__list {
     display: -ms-flexbox;
     display: flex;
-    gap: 1.5rem;
+}
+
+.social-buttons__item + .social-buttons__item {
+    margin-left: 1.5rem;
 }
 
 .social-buttons__link {
@@ -11587,7 +11619,6 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    gap: 1.1rem;
     white-space: nowrap;
 }
 
@@ -11609,6 +11640,7 @@ readers do not read off random characters that represent icons */
 .nav__link--parrent::after {
     content: "";
     display: block;
+    margin-left: 1.1rem;
     width: 0;
     height: 0;
     border-left: 4px solid transparent;
@@ -11835,11 +11867,14 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 3rem;
+}
+
+.wall__new-post {
+    margin-bottom: 3rem;
 }
 
 .wall__pagination {
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 @media (max-width: 425px) {
@@ -11904,16 +11939,9 @@ readers do not read off random characters that represent icons */
 .new-post__buttons {
     display: -ms-flexbox;
     display: flex;
-    gap: 2rem;
     -ms-flex-item-align: end;
     align-self: flex-end;
     margin: 1.5rem 2rem 1.5rem auto;
-}
-
-@media (max-width: 768px) {
-    .new-post__buttons {
-        gap: 1rem;
-    }
 }
 
 @media (max-width: 425px) {
@@ -11926,12 +11954,25 @@ readers do not read off random characters that represent icons */
     cursor: pointer;
 }
 
+.new-post__send-btn {
+    margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+    .new-post__send-btn {
+        margin-left: 1rem;
+    }
+}
+
 .posts__list {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 3rem;
+}
+
+.posts__item + .posts__item {
+    margin-top: 3rem;
 }
 
 .post {
@@ -11981,20 +12022,19 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    gap: 3rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .post__footer {
         margin-top: 1.5rem;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        row-gap: 1.5rem;
     }
 }
 
 .post__img-wrap {
-    aspect-ratio: 20/9;
+    padding-top: 45%;
+    position: relative;
 }
 
 .post__img {
@@ -12002,10 +12042,13 @@ readers do not read off random characters that represent icons */
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    position: absolute;
+    top: 0;
 }
 
 .post__video-wrap {
-    aspect-ratio: 20/9;
+    padding-top: 45%;
+    position: relative;
 }
 
 .post__video {
@@ -12013,6 +12056,8 @@ readers do not read off random characters that represent icons */
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    position: absolute;
+    top: 0;
 }
 
 .post__title {
@@ -12035,6 +12080,7 @@ readers do not read off random characters that represent icons */
     font-size: 1.2rem;
     color: #828282;
     position: relative;
+    margin-left: 3rem;
 }
 
 .post__category::before {
@@ -12056,9 +12102,10 @@ readers do not read off random characters that represent icons */
     color: #107EFF;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .post__link {
         width: 100%;
+        margin-top: 1.5rem;
     }
 }
 
@@ -12076,7 +12123,10 @@ readers do not read off random characters that represent icons */
 .pagination__list {
     display: -ms-flexbox;
     display: flex;
-    gap: 1rem;
+}
+
+.pagination__item + .pagination__item {
+    margin-left: 1rem;
 }
 
 .pagination__link {
@@ -12147,7 +12197,6 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    gap: 0.8rem;
     opacity: 0.6;
     transition: opacity 0.2s ease-in-out;
 }
@@ -12158,6 +12207,7 @@ readers do not read off random characters that represent icons */
 
 .article__share-btn::after {
     content: "";
+    margin-left: 0.8rem;
     display: inline-block;
     width: 2rem;
     height: 2rem;
@@ -12174,7 +12224,6 @@ readers do not read off random characters that represent icons */
 .article__info {
     display: -ms-flexbox;
     display: flex;
-    gap: 3rem;
     margin-top: 0.6rem;
 }
 
@@ -12184,6 +12233,7 @@ readers do not read off random characters that represent icons */
 }
 
 .article__category {
+    margin-left: 3rem;
     font-size: 1.2rem;
     color: #828282;
     position: relative;
@@ -12281,7 +12331,6 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 0.6rem;
 }
 
 .references__link {
@@ -12291,6 +12340,7 @@ readers do not read off random characters that represent icons */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 0.6rem;
 }
 
 .references__link:hover {
@@ -12310,10 +12360,6 @@ readers do not read off random characters that represent icons */
     margin-bottom: 5rem;
 }
 
-.discussion__form {
-    gap: 1.2rem;
-}
-
 .discussion__comments {
     margin-left: -2rem;
 }
@@ -12323,9 +12369,12 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 3rem;
     margin-top: 3rem;
     margin-left: 2rem;
+}
+
+.comments__item + .comments__item {
+    margin-top: 3rem;
 }
 
 .message__header {
@@ -12371,7 +12420,10 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 3rem;
+}
+
+.works__item + .works__item {
+    margin-top: 3rem;
 }
 
 .work {
@@ -12420,14 +12472,12 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 3rem;
 }
 
 @media (max-width: 768px) {
     .work__right {
         width: 100%;
         padding: 2rem 1.5rem;
-        gap: 2rem;
     }
 }
 
@@ -12441,11 +12491,23 @@ readers do not read off random characters that represent icons */
     font-size: 1.6rem;
     line-height: 1.6em;
     font-weight: 300;
+    margin-top: 3rem;
 }
 
 @media (max-width: 768px) {
     .work__description {
         font-size: 1.4rem;
+        margin-top: 2rem;
+    }
+}
+
+.work__tags {
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .work__tags {
+        margin-top: 2rem;
     }
 }
 
@@ -12457,6 +12519,7 @@ readers do not read off random characters that represent icons */
 
 @media (max-width: 768px) {
     .work__link {
+        margin-top: 2rem;
         -ms-flex-item-align: start;
         align-self: flex-start;
     }
@@ -12529,7 +12592,6 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 1.5rem;
 }
 
 .profile__photo-wrap {
@@ -12553,6 +12615,7 @@ readers do not read off random characters that represent icons */
 }
 
 .profile__photo-btn {
+    margin-top: 1.5rem;
     color: #107EFF;
     text-decoration: underline;
     transition: -webkit-text-decoration 0.2s linear;
