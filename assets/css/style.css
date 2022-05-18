@@ -11529,7 +11529,6 @@ readers do not read off random characters that represent icons */
 .buttons-sidebar__list {
     display: -ms-flexbox;
     display: flex;
-    gap: 1rem;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
@@ -12007,13 +12006,6 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 1.5rem;
-}
-
-@media (max-width: 425px) {
-    .post__content {
-        gap: 2rem;
-    }
 }
 
 .post__footer {
@@ -12069,6 +12061,16 @@ readers do not read off random characters that represent icons */
     font-size: 1.4rem;
     line-height: 1.5em;
     color: #D2D2D2;
+}
+
+.post__title + .post__text {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 425px) {
+    .post__title + .post__text {
+        margin-top: 2rem;
+    }
 }
 
 .post__date {
@@ -12452,7 +12454,7 @@ readers do not read off random characters that represent icons */
 
 @media (max-width: 768px) {
     .work__img-wrap {
-        aspect-ratio: 12/8;
+        padding-top: 66.66%;
     }
 }
 
@@ -12532,8 +12534,8 @@ readers do not read off random characters that represent icons */
     flex-wrap: wrap;
 }
 
-.tags__item + .tags__item {
-    margin-left: 1rem;
+.tags__item {
+    margin: 0 1rem 1rem 0;
 }
 
 .tags__elem {
@@ -12568,7 +12570,6 @@ readers do not read off random characters that represent icons */
 .profile__content {
     display: -ms-flexbox;
     display: flex;
-    gap: 3rem;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
@@ -12595,6 +12596,13 @@ readers do not read off random characters that represent icons */
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin: 0 0 0 3rem;
+}
+
+@media (max-width: 425px) {
+    .profile__right {
+        margin: 0 0 3rem 0;
+    }
 }
 
 .profile__photo-wrap {

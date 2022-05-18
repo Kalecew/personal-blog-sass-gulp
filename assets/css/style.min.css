@@ -11856,13 +11856,20 @@ readers do not read off random characters that represent icons */
 }
 @media (max-width: 768px) {
   .work__img-wrap {
-    aspect-ratio: 12/8;
+    padding-top: 66.66%;
+    position: relative;
   }
 }
 .work__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+@media (max-width: 768px) {
+  .work__img {
+    position: absolute;
+    top: 0;
+  }
 }
 .work__right {
   width: 29rem;
