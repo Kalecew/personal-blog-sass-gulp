@@ -11,7 +11,6 @@
 	}
 	&__content {
 		display: flex;
-		gap: 3rem;
 		justify-content: space-between;
 		@include breakpoint($mobileL) {
 			flex-direction: column-reverse;
@@ -26,6 +25,10 @@
 	&__right {
 		display: flex;
 		flex-direction: column;
+		margin: 0 0 0 3rem;
+		@include breakpoint($mobileL) {
+			margin: 0 0 3rem 0;
+		}
 	}
 	&__photo-wrap {
 		box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.25);
