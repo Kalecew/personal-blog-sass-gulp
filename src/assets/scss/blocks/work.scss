@@ -30,11 +30,9 @@
 		padding: 2.5rem;
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
 		@include breakpoint($tablet) {
 			width: 100%;
 			padding: 2rem 1.5rem;
-			gap: 2rem;
 		}
 	}
 	&__h2 {
@@ -46,16 +44,23 @@
 		font-size: 1.6rem;
 		line-height: 1.6em;
 		font-weight: 300;
+		margin-top: 3rem;
 		@include breakpoint($tablet) {
 			font-size: 1.4rem;
+			margin-top: 2rem;
 		}
 	}
 	&__tags {
+		margin-top: 3rem;
+		@include breakpoint($tablet) {
+			margin-top: 2rem;
+		}
 	}
 	&__link {
 		margin-top: auto;
 		align-self: flex-end;
 		@include breakpoint($tablet) {
+			margin-top: 2rem;
 			align-self: flex-start;
 		}
 	}

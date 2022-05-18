@@ -4,9 +4,11 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
 	}
 	&__item {
+		& + & {
+			margin-top: 3rem;
+		}
 	}
 	&__card {
 	}

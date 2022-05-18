@@ -1,9 +1,11 @@
 .social-buttons {
 	&__list {
 		display: flex;
-		gap: 1.5rem;
 	}
 	&__item {
+		& + & {
+			margin-left: 1.5rem;
+		}
 	}
 	&__link {
 		font-size: 0;

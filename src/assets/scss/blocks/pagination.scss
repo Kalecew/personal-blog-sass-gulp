@@ -3,9 +3,11 @@
 	justify-content: center;
 	&__list {
 		display: flex;
-		gap: 1rem;
 	}
 	&__item {
+		& + & {
+			margin-left: 1rem;
+		}
 	}
 	&__link {
 		width: 2.85em;

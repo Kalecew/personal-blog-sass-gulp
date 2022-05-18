@@ -26,7 +26,6 @@
 		color: $text-light;
 		display: flex;
 		align-items: center;
-		gap: .8rem;
 		opacity: .6;
 		transition: opacity .2s ease-in-out;
 		&:hover {
@@ -34,6 +33,7 @@
 		}
 		&::after {
 			content: "";
+			margin-left: .8rem;
 			display: inline-block;
 			width: 2rem;
 			height: 2rem;
@@ -48,7 +48,6 @@
 	}
 	&__info {
 		display: flex;
-		gap: 3rem;
 		margin-top: .6rem;
 	}
 	&__date {
@@ -56,6 +55,7 @@
 		font-size: 1.2rem;
 	}
 	&__category {
+		margin-left: 3rem;
 		font-size: 1.2rem;
 		color: $text-gray;
 		position: relative;

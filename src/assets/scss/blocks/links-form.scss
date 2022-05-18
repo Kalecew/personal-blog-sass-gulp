@@ -2,22 +2,27 @@
 	&__list {
 		display: flex;
 		justify-content: center;
-		gap: 1rem;
 		@include breakpoint($mobileL) {
 			flex-direction: column;
 			align-items: center;
 		}
 	}
 	&__item {
+		& + & {
+			margin: 0 0 0 1rem;
+			@include breakpoint($mobileL) {
+				margin: 1rem 0 0 0;
+			}
+		}
 	}
 	&__elem {
-		display: flex;
-		gap: .2rem;
+		display: flex;		
 		&--gray {
 			color: $text-light-gray;
 		}
 	}
 	&__link {
+		margin-left: .2rem;
 		&:hover {
 			text-decoration: underline;
 		}

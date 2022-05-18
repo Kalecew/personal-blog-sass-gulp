@@ -1,12 +1,14 @@
 .form {
 	display: flex;
 	flex-direction: column;	
-	gap: 2.5rem;
 	position: relative;
-	@include breakpoint($mobileM) {
-		gap: 1.5rem;
-	}
 	&__input-wrap {
+		& + & {
+			margin-top: 2.5rem;
+			@include breakpoint($mobileM) {
+				margin-top: 1.5rem;
+			}
+		}
 		&::after {
 			content: "";
 			display: block;
@@ -34,6 +36,13 @@
 	}
 	&__btn {
 		align-self: flex-start;
+		margin-top: 2.5rem;
+		&--discussion {
+			margin-top: 1.2rem;
+		}
+		@include breakpoint($mobileM) {
+			margin-top: 1.5rem;
+		}
 	}
 	&__links {
 		position: absolute;

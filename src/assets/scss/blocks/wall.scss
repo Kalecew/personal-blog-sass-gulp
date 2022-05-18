@@ -1,13 +1,13 @@
 .wall {
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
 	&__new-post {
+		margin-bottom: 3rem;
 	}
 	&__posts {
 	}
 	&__pagination {
-		margin-top: 5rem;
+		margin-top: 8rem;
 		@include breakpoint($mobileL) {
 			margin-top: 2rem;
 		}

@@ -2,11 +2,13 @@
 	&__list {
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
 		margin-top: 3rem;
 		margin-left: 2rem;
 	}
 	&__item {
+		& + & {
+			margin-top: 3rem;
+		}
 	}
 	&__message {
 	}

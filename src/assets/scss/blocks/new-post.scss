@@ -27,16 +27,10 @@
 	}
 	&__buttons {
 		display: flex;
-		gap: 2rem;
 		align-self: flex-end;
 		margin: 1.5rem 2rem 1.5rem auto;
-		@include breakpoint($tablet) {
-			gap: 1rem;
-		}
 		@include breakpoint($mobileL) {
-			// margin: 2rem 1.5rem 2rem auto;
-			margin: 1rem 1rem 1rem auto;
-			
+			margin: 1rem 1rem 1rem auto;			
 		}
 	}
 	&__photo-btn {
@@ -45,5 +39,9 @@
 	&__photo-input {
 	}
 	&__send-btn {
+		margin-left: 2rem;
+		@include breakpoint($tablet) {
+			margin-left: 1rem;
+		}
 	}		
 }
