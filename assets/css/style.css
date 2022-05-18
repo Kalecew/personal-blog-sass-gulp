@@ -12528,9 +12528,12 @@ readers do not read off random characters that represent icons */
 .tags__list {
     display: -ms-flexbox;
     display: flex;
-    gap: 1rem;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+
+.tags__item + .tags__item {
+    margin-left: 1rem;
 }
 
 .tags__elem {
